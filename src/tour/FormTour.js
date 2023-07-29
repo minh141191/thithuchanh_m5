@@ -13,10 +13,10 @@ export default function FormTour(props) {
             .matches(/[a-zA-Z]+/, "Invalid name!")
             .required("Required!"),
         price: Yup.number().min(0, "Too young")
-            .max(100000000, "Too old")
+            .max(10000000, "Too old")
             .required("Required!"),
         description: Yup.string().min(3, "Too short")
-            .max(30, "Too long")
+            .max(100000, "Too long")
             .matches(/[a-zA-Z]+/, "Invalid description!")
             .required("Required!"),
     })
@@ -57,17 +57,17 @@ export default function FormTour(props) {
                     </div>
                     <div className="mb-3">
                         <label htmlFor={'description'} className={'form-label'}>Mô tả</label>
-                        <Field name={'description'} type={'text'} className={'form-control'} id={'description'}
+                        <Field as={`textarea`} name={'description'} className={'form-control'} id={'description'}
                                placeholder={'Mô tả'}/>
                     </div>
                     <div className="mb-3">
                         <div style={{textAlign: "center"}}>
                             {props.tour.id == null && <>
-                                    <button className={'btn btn-primary'}>Thêm</button>
+                                    <button className={'btn btn-primary'}>Thêm tour</button>
                             </>}
 
                             {props.tour.id != null && <>
-                                    <button className={'btn btn-warning'}>sửa</button>
+                                    <button className={'btn btn-warning'}>Sửa tour</button>
                             </>}
 
                             &ensp;&ensp;

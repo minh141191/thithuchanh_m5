@@ -17,7 +17,7 @@ export default function View() {
                 <h1 style={{marginTop: 100, marginBottom: 30}}>Chi tiết tour</h1>
                 <h5>Tour du lịch {tour.name} </h5><br/>
                 <h5>Giá: {tour.price}</h5><br/>
-                <p style={{width:600}}>Giới thiệu: {tour.description}</p><br/>
+                <p>Giới thiệu: {tour.description}</p><br/>
                 <Link className={'btn btn-info'} to={'/'}>
                     Danh sách
                 </Link>

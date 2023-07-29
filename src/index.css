@@ -17,3 +17,7 @@ h2 {
   text-align: center;
   color: blue;
 }
+#description {
+  height: 130px;
+  resize: none;
+}

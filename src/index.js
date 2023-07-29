@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import List from "./employee/List";
-import View from "./employee/View";
-import Create from "./employee/Create";
-import Update from "./employee/Update";
-import Delete from "./employee/Delete";
+import List from "./tour/List";
+import View from "./tour/View";
+import Create from "./tour/Create";
+import Update from "./tour/Update";
+import Delete from "./tour/Delete";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
