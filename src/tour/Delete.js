@@ -17,13 +17,13 @@ export default function Delete() {
 
     const deleteTour =  async (id) => {
         Swal.fire({
-            title: 'Bạn muốn xoá tour này?',
-            showDenyButton: true,
-            confirmButtonText: 'Xóa',
-            denyButtonText: 'Hủy',
-        }).then((result) => {
-            /* Read more about isConfirmed, isDenied below */
-            if (result.isConfirmed) {
+                title: 'Bạn muốn xoá tour này?',
+                showDenyButton: true,
+                confirmButtonText: 'Xóa',
+                denyButtonText: 'Hủy',
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
                 axios.delete(`http://localhost:8080/api/tours/${id}`).then(() => {
                     Swal.fire({
                         title: 'Đã xóa!',
